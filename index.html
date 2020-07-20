@@ -3,115 +3,58 @@
 <head>
 	<style>
 		@font-face {
-			font-family: NRA_Web;
-			src: url(https://research.styc.co.uk/wp-content/fonts/NewRailAlphabetWeb-Lt.woff);
+			font-family: Tr_B;
+			src: url(./resources/fonts/TrB.woff);
 			font-stretch: normal;
-			font-style: normal;
-			font-weight: 200;
-		}
-		@font-face {
-			font-family: NRA_Web;
-			src: url(https://research.styc.co.uk/wp-content/fonts/NewRailAlphabetWeb-LtIt.woff);
-			font-stretch: normal;
-			font-style:	italic;
-			font-weight: 200;
-		}
-		@font-face {
-			font-family: NRA_Web;
-			src: url(https://research.styc.co.uk/wp-content/fonts/NewRailAlphabetWeb-Regular.woff);
-			font-stretch: normal;
-			font-style: normal;
-			font-weight: normal;
-		}
-		@font-face {
-			font-family: NRA_Web;
-			src: url(https://research.styc.co.uk/wp-content/fonts/NewRailAlphabetWeb-It.woff);
-			font-stretch: normal;
-			font-style:	italic;
-			font-weight: normal;
-		}
-		@font-face {
-			font-family: NRA_Web;
-			src: url(https://research.styc.co.uk/wp-content/fonts/NewRailAlphabetWeb-SemiBd.woff);
-			font-stretch: normal;
-			font-style: normal;
 			font-weight: 500;
 		}
 		@font-face {
-			font-family: NRA_Web;
-			src: url(https://research.styc.co.uk/wp-content/fonts/NewRailAlphabetWeb-SemiBdIt.woff);
+			font-family: Tr_B;
+			src: url(./resources/fonts/TrBl.woff);
 			font-stretch: normal;
-			font-style:	italic;
-			font-weight: 500;
-		}
-		@font-face {
-			font-family: NRA_Web;
-			src: url(https://research.styc.co.uk/wp-content/fonts/NewRailAlphabetWeb-Bd.woff);
-			font-stretch: normal;
-			font-style: normal;
-			font-weight: 700;
-		}
-		@font-face {
-			font-family: NRA_Web;
-			src: url(https://research.styc.co.uk/wp-content/fonts/NewRailAlphabetWeb-BdIt.woff);
-			font-stretch: normal;
-			font-style:	italic;
-			font-weight: 700;
+			font-weight: 600;
 		}
 		body{
-    		background-color: #333;
+    		background-color: #aaa;
     		color: #ccc;
-			font-family: NRA_Web;
+			font-family: Tr_B;
+			font-kerning: normal;
+		}
+		div.ex1,div.ex2 {
+			font-size: 48pt;
+			width: fit-content;
+			margin: auto;
+			border: 7.5px solid #111;
+			border-radius: 15px;
+			text-align: center;
+			line-height: 1;
 		}
 		div.ex1{
-			font-size: 48pt;
-			width: fit-content;
-			margin: auto;
-			border: 7.5px solid #ccc;
-			border-radius: 15px;
-			text-align: center;
-			font-weight: 500;
+			background-color: #ffd200;
+			color: #111;
+			font-weight: 600;
 			padding-top: 0.4em; 
-			padding-bottom: 0.5em;
+			padding-bottom: 25px;
 			padding-left: 0.7em;
 			padding-right: 0.7em;
-			line-height: 1.1em;
+			max-width: 700px;
 		}
 		div.ex2{
-			font-size: 48pt;
-			width: fit-content;
-			margin: auto;
-			background-color: #ccc;
-    		color: #333;
-			border: 7.5px solid #ccc;
-			border-radius: 15px;
-			text-align: center;
-			font-weight: 700;
-			padding-top: 0.1em; 
-			padding-bottom: 0.35em;
-			padding-left: 0.7em;
-			padding-right: 0.7em;
-			line-height: 1.1em;
-			margin-top: 5px
-
+			background-color: #fff;
+    		color: #111;
+			font-weight: 600;
+			padding-top: 25px; 
+			padding-bottom: 25px;
+			padding-left: 50px;
+			padding-right: 50px;
+			margin-top: 10px;
+			max-width: 400px;
 		}
 		div.ex2:hover{
-			font-size: 48pt;
-			width: fit-content;
-			margin: auto;
-			background-color: #aaa;
-    		color: #333;
-			border: 7.5px solid #ccc;
-			border-radius: 15px;
-			text-align: center;
-			font-weight: 700;
-			padding-top: 0.1em; 
-			padding-bottom: 0.35em;
-			padding-left: 0.7em;
-			padding-right: 0.7em;
-			line-height: 1.1em;
-			margin-top: 5px
-
+			background-color: #0079c1;
+			color:#fff;
+			font-weight: 500;
+			border-color: #fff
 		}
 		div.footer{
 			font-size: 12pt;
@@ -130,10 +73,17 @@
 			padding-top: 20px;
 			padding-bottom: 15px;
 		}
-		
-		img.im1{
-			width: 200px;
+		br {
+			margin: 0 0 20px;
 		}
+		/*for svg*/
+		svg.man_in_umbrella{
+			width:250px;
+		}
+		path.a{fill:#e31837;}
+		polygon.b{fill:#fff;}
+		path.a,polygon.b{fill-rule:evenodd;}
+		path.c{fill:#111;}
 	</style>
 <meta charset="UTF-8">
 <title>styc</title>
@@ -141,9 +91,18 @@
 </head>
 
 <body>
-	<div class="ex1"><img class="im1" src="work.svg" /></br>Site under construction</br>Delays expected</div>
-	<div class="ex2" style="cursor:pointer;" onclick="location.href='https://research.styc.co.uk';">Click for blog</div>
-	<div class="footer">Copyright © Schoen T Y Cho, as styc.co.uk 2019. All rights reserved.</div>
+	<!--  -->
+	<div class="ex1">
+		<svg xmlns="http://www.w3.org/2000/svg" class='man_in_umbrella' viewBox="0 0 360.08 318"><path class="a" d="M357,282.3,200.8,12A23.77,23.77,0,0,0,180.2.1H180A23.77,23.77,0,0,0,159.4,12L3.3,282.3A23.85,23.85,0,0,0,24,318.1H336.3A23.69,23.69,0,0,0,357,306.2,24.24,24.24,0,0,0,357,282.3Z" transform="translate(-0.07 -0.1)"/><polygon class="b" points="37.73 286.2 180.03 39.7 322.43 286.2 37.73 286.2"/><path class="c" d="M271,253.4c-2-1.3-5-2-6.7-3.8-1.9-2-19.3-22.1-19.5-22.5s-2.5-2.7-5.3-1.5a26.07,26.07,0,0,1-2-2.6s-4.9-30.1-10.2-42.9a23.11,23.11,0,0,0,2.9-2s4.1,3.7,7.6,0c3.6-3.9,3.3-3.8,2.6-5.5-.5-1.7-.7-2.2-2-2.9a7.5,7.5,0,0,1-3.2-6.1,67.35,67.35,0,0,0-2.9-16.9c-1.7-3.8-2.2-8.3-8.5-11.1-9.7-4.2-22.8-6.8-32.4-4.4-2.5.7-11,7-11.7,7.3-.9.5-4.2,1.9-3.8-1.2.5-6.4-5.1-17.9-15.2-17.8-12.3-.1-14.2,11.8-14.3,13.1.1,6.2,4.6,14,17.2,15.2,0,0,2.4.4,2.3,2s0,1-.9,1.8c-.6.9-7.1,7-7.3,8.5-.7,7.7,1,17.4,2.6,23,0,0,1.8,4.7.3,8.2-1.4,3.3-7.8,19.3-8.5,20.4a10.6,10.6,0,0,0-1.2,8.2c-.5.5-11.1,7.3-11.1,7.3h0a10.6,10.6,0,0,0-5.8-5.3c-4.2-1-7.6-.5-11.1-7l-2.9-5s-.8-1.9-3.8-2.6c-3.2-.5-7.4-1.7-9-1.5-2.3.1-4.1-.6-7,2.9-2.4,2.8-40.6,69.1-40.6,69.1h91.6s2.4-.3,1.8-2.3c-.6-2.2-11.7-41.4-11.7-41.4l12.8-8.2s.9,1.7,4.7,0a37.73,37.73,0,0,0,5-2.6s2.2-.2,2-4.7c1.3-.9,14.9-9.3,14.9-9.3s-4.7,11.8-5.3,16.9c-.3,5.4-2,40.8-2,40.8s.1,2.6-1.8,3.2c-1.8.4-9.9,2.6-9.9,2.6s-2.4.5-2.3,2.3c-.1,1.8.8,2.4,1.8,2.3,1.1.1,26.8,0,26.8,0s2.7.5,3.2-2.9,5.3-38.8,5.3-38.8a2.61,2.61,0,0,1-2-2.6c-.1-2.2-.1-3.9.6-4.7a91,91,0,0,0,13.7-22.5c.9-1.8,1.5-.1,1.8.3.1.5,10.2,28,11.4,28.9,1.2,1.2,28.5,23.3,29.2,23.6.5.5,2.3,1.7,2.3,5.5a14.48,14.48,0,0,1-2.6,8.2c-1.1,1.3-2.8,3-2.9,3.8a1.4,1.4,0,0,0,1.5,1.2,36.82,36.82,0,0,0,4.7,0c.2.1,4.9.5,8.2-5.3s9.3-15.8,9.3-15.8a2.07,2.07,0,0,0-.7-2.9Zm-82.9-62.2-3.8,7.9h0s-16.2,10.2-17.5,11.1c-1.3.7-2-.1-.9-1.8,7.4-9.9,10.1-21.6,8.5-30.9-.3-1.6.9-1.6,1.8-1.2a46.2,46.2,0,0,1,12,12.3c.5.5-.1,2.6-.1,2.6ZM224.3,174c-1.2-2.9-13.8-22-16.3-25.7-1.7-2.3.9-2.3.9-2.3s7.3-.1,8.8,0a4.5,4.5,0,0,1,2.6,2l6.7,24.5Z" transform="translate(-0.07 -0.1)"/></svg></br>
+		Site under construction</br>
+		Delays expected
+	</div>
+	<div class="ex2" style="cursor:pointer;" onclick="location.href='https://research.styc.co.uk';">
+		Click for blog
+	</div>
+	<div class="footer">
+		Copyright © Schoen T.Y. Cho as styc.co.uk 2020. All rights reserved.
+	</div>
 </body>
 
 </html>
